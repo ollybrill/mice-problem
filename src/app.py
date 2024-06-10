@@ -117,7 +117,6 @@ def get_mouse_graph(mice, random_mice_spacing, stretch_ratio):
     # plt.scatter(mousex,mousey,color="black",marker=".")
     # Working out when to stop
     caught = np.zeros(mice)
-    pathlength = 0
     for i in range(steps):
         if sum(caught) == mice:
             pathlength = i * speed
